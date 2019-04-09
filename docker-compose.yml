@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  app:
+    build: . # location of the Dockerfile
+    command: npm start # command that will be executed
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/home/app
